@@ -34,14 +34,14 @@ double getRecurrent(const size_t k);
 
 int main()
 {
-	const auto count = ("Введите количество членов последовательности");
+	const size_t count = getCount("Введите количество членов последовательности");
 	const double sum = getSum(count);
 	cout << " " << sum << "\n";
 
 	return 0;
 }
 
-size_t getCount(const string& message = "")
+size_t getCount(const string& message)
 {
 	cout << message;
 	int count;
@@ -60,7 +60,7 @@ double getSum(const size_t count)
 		sum += current;
 	}
 
-	return 0.0;
+	return sum;
 }
 
 double getRecurrent(const size_t k)

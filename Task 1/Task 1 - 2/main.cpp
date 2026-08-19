@@ -16,7 +16,7 @@ double getP(const double p);
 
 int main()
 {
-        const double p;
+        double p;
 	cout << "Введите значение веса = "; cin >> p;
 	
 	const double q = getP(p);	
